@@ -10,7 +10,9 @@ class Radar
   float lineX2 = (sqSize/2 + (r-7)*cos(time));
   float lineY2 = (height-r + (r-7)*sin(time));
   
-  Radar(){}
+  Radar()
+  {
+  }
   
   void drawRadar()
   {
