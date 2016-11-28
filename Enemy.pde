@@ -6,7 +6,7 @@ class Enemy extends Radar
 
 
   Enemy() 
-  {
+  {  
   }
   
   void enemyApproaching()
@@ -22,14 +22,10 @@ class Enemy extends Radar
       enemyX = sqSize/2;
     }
     else if (frameCount % 315 == 0)
-    {
-        
+    { 
         enemyY = enemyY - 10;
-     
     }
-    
-    
- }
-     
+
+ } 
     
 }//end class
