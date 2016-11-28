@@ -1,4 +1,4 @@
-class Line
+class Line extends Radar
 {
   float lineX1;
   float lineY1;
@@ -8,7 +8,7 @@ class Line
   int r = 145;
   float time = millis() / 800.0f;
 
-  Line(float lineX1, float lineY1, float line2X, float line2Y)
+  Line()
   {
     this.lineX1 = lineX1;
     this.lineY1 = lineY1;

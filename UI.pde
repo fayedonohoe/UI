@@ -1,13 +1,20 @@
 void setup()
 {
-  fullScreen();  // 768 x 1366
+  size( 1000, 600);
+  //fullScreen();  // 768 x 1366
+  
+  radar = new Radar(); //initilias radar
+  line = new Line(); //initilias line
 }
 
-
+Radar radar; //declares radar
+Line line; //declares line
 
 void draw()
 {
+  radar.drawRadar();
 
+  /*
   stroke(0,255,0);
   int sqX = 0;
   int sqY = height-(width/5);
@@ -34,7 +41,7 @@ void draw()
   
   //Radar Line
   strokeWeight(6);
-  Line Line = new Line( sqSize/2, height-r);
+  Line Line = new Line( sqSize/2, height-r);1
   //line( sqSize/2, height-r, line2X, line2Y );
   strokeWeight(1);
   
