@@ -14,10 +14,10 @@ void draw()
   int sqSize = height / 2;
   int circleSize = 270;
   
-  int r = circleSize/2;
+  int r = 145;
   float time = millis() / 800.0f;
-  float line2X = (sqSize/2 + r*cos(time));
-  float line2Y = (height-r + r*sin(time));
+  //float line2X = (sqSize/2 + r*cos(time));
+  //float line2Y = (height-r + r*sin(time));
   
   int enemyX = sqSize/2;  //startX
   int enemyY = height;  //startY
@@ -35,7 +35,7 @@ void draw()
   //Radar Line
   strokeWeight(6);
   Line Line = new Line( sqSize/2, height-r);
-  line( sqSize/2, height-r, line2X, line2Y );
+  //line( sqSize/2, height-r, line2X, line2Y );
   strokeWeight(1);
   
   //enemy approaching
