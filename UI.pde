@@ -1,7 +1,5 @@
-int currentScreen = 1;
+int currentScreen;
   
-
-
 void setup()
 {
   size( 1000, 600);
@@ -10,33 +8,26 @@ void setup()
   radar = new Radar(); //initialises radar
   line = new Line(); //initialises line
   enemy = new Enemy();//initialises enemy
+  window = new Window();
   
 }
- 
- switch(currentScreen)
- {
-   //main screen
-   case 1:
-     Radar radar; //declares radar
-    Line line; //declares line
-    Enemy enemy; //declares enemy
-    
-    /*check X and Y position
-    void mouseClicked(){println(mouseX, mouseY);}
-    */
-    
-    void draw()
-    {
-      radar.drawRadar();
-      line.drawLine();
-      enemy.enemyApproaching();
-    }
-    break;
-   
- }//end switch
-    
-    
-    
+  
+  Radar radar; //declares radar
+  Line line; //declares line
+  Enemy enemy; //declares enemy
+  Window window;
+  
+  /*check X and Y position
+  void mouseClicked(){println(mouseX, mouseY);}
+  */
+  
+  void draw()
+  {
+    radar.drawRadar();
+    line.drawLine();
+    enemy.enemyApproaching();
+    window.drawWindow();
+  }
 
 
 

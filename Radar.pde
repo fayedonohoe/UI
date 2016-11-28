@@ -1,10 +1,11 @@
+int r = 125; 
+  
 class Radar
 {
   int sqX = 0;
   int sqY = height-(width/4);
   int sqSize = width / 3;
   int circleSize = 240;
-  int r = 125; 
   
   float time = millis() / 800.0f;
   float lineX2 = (sqSize/2 + (r-7)*cos(time));
