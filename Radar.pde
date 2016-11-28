@@ -1,34 +1,21 @@
-int sqX = 0;
+class Radar
+{
+  int sqX = 0;
   int sqY = height-(width/5);
   int sqSize = height / 2;
   int circleSize = 270;
+  int r = 145; 
   
-  int r = 145;
   float time = millis() / 800.0f;
-  float line2X = (sqSize/2 + r*cos(time));
-  float line2Y = (height-r + r*sin(time));
-  
-  int enemyX = sqSize/2;  //startX
-  int enemyY = height;  //startY
-  int enemySize = 15;
-
-class Radar
-{
+  float lineX2 = (sqSize/2 + r*cos(time));
+  float lineyY2 = (height-r + r*sin(time));
   
   /*
   float sqX;
   float sqY;
-  
-  Radar(float sqX, float sqY) //assigning starting values
-  {
-    this.sqX = sqX;
-    this.sqY = sqY; 
-  }
+ 
   */
   
-  
-  
- 
   void drawRadar()
   {
     stroke(0,255,0);
