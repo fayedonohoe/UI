@@ -1,4 +1,4 @@
-
+int currentScreen = 1;
   
 
 
@@ -12,28 +12,33 @@ void setup()
   enemy = new Enemy();//initialises enemy
   
 }
+ 
+ switch(currentScreen)
+ {
+   //main screen
+   case 1:
+     Radar radar; //declares radar
+    Line line; //declares line
+    Enemy enemy; //declares enemy
+    
+    /*check X and Y position
+    void mouseClicked(){println(mouseX, mouseY);}
+    */
+    
+    void draw()
+    {
+      radar.drawRadar();
+      line.drawLine();
+      enemy.enemyApproaching();
+    }
+    break;
+   
+ }//end switch
+    
+    
+    
 
-Radar radar; //declares radar
-Line line; //declares line
-Enemy enemy; //declares enemy
 
-/*check X and Y position
-void mouseClicked()
-  {
-      println(mouseX, mouseY);
-  }
-*/
-
-void draw()
-{
-  
-  radar.drawRadar();
-  line.drawLine();
-  
-  enemy.enemyApproaching();
-  
-  
-}
 
 /*
 to make orbity bits use  kinda but have the 7s dif nums
