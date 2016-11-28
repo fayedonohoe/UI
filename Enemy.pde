@@ -21,7 +21,7 @@ class Enemy extends Radar
       enemyY = height-r;
       enemyX = sqSize/2;
     }
-    else if (frameCount % 315 == 0)
+    else if (frameCount % 310 == 0)
     { 
         enemyY = enemyY - 10;
     }

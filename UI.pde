@@ -1,8 +1,5 @@
 
   
-  int enemyX = 250;  //startX
-  int enemyY = height;  //startY
-  int enemySize = 15;
 
 
 void setup()
