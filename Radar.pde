@@ -7,15 +7,10 @@ class Radar
   int r = 125; 
   
   float time = millis() / 800.0f;
-  float lineX2 = (sqSize/2 + r*cos(time));
-  float lineyY2 = (height-r + r*sin(time));
+  float lineX2 = (sqSize/2 + (r-7)*cos(time));
+  float lineY2 = (height-r + (r-7)*sin(time));
   
   Radar(){}
-  /*
-  float sqX;
-  float sqY;
- 
-  */
   
   void drawRadar()
   {

@@ -20,15 +20,14 @@ Line line; //declares line
 void draw()
 {
   radar.drawRadar();
+  line.drawLine();
 
   /*
     
   int enemyX = sqSize/2;  //startX
   int enemyY = height;  //startY
   int enemySize = 15;
-  
-
-  
+   
   //enemy approaching
   fill(255, 0, 0);
   noStroke();
@@ -49,3 +48,9 @@ void draw()
   
   
 }
+
+/*
+to make orbity bits use  kinda but have the 7s dif nums
+float lineX2 = (sqSize/2 + (r-7)*cos(time));
+float lineY2 = (height-r + (r-7)*sin(time));
+*/
