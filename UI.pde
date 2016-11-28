@@ -1,6 +1,6 @@
 
   
-  int enemyX = sqSize/2;  //startX
+  int enemyX = 250;  //startX
   int enemyY = height;  //startY
   int enemySize = 15;
 

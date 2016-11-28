@@ -17,9 +17,11 @@ class Line extends Radar
 
   }
 
-}//end class
+//end class
+
   //Radar Line
-  strokeWeight(6);
+  /*strokeWeight(6);
   Line Line = new Line( sqSize/2, height-r);1
   line( sqSize/2, height-r, line2X, line2Y );
-  strokeWeight(1);
+  strokeWeight(1);*/
+}

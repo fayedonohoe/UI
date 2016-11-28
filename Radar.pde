@@ -2,7 +2,7 @@ class Radar
 {
   int sqX = 0;
   int sqY = height-(width/5);
-  int sqSize = height / 2;
+  int sqSize = width / 2;
   int circleSize = 270;
   int r = 145; 
   
@@ -10,6 +10,7 @@ class Radar
   float lineX2 = (sqSize/2 + r*cos(time));
   float lineyY2 = (height-r + r*sin(time));
   
+  Radar(){}
   /*
   float sqX;
   float sqY;
