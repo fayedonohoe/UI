@@ -34,6 +34,3 @@ class Radar
     strokeWeight(1);
   }  
 }
-  
-  
-  

@@ -20,6 +20,23 @@ Radar radar; //declares radar
 Line line; //declares line
 Enemy enemy; //declares enemy
 
+/*check X and Y position
+void mouseClicked()
+  {
+      println(mouseX, mouseY);
+      243, 564
+      227, 551
+      221, 542
+      211, 528
+      202, 518
+      195, 508
+      187, 501
+      181, 493
+      172, 484
+      167, 476
+  }
+*/
+
 void draw()
 {
   radar.drawRadar();
