@@ -18,6 +18,9 @@ class Radar
   {
     stroke(0,255,0);
     fill(0);
+    
+    
+    
     rect(sqX, sqY , sqSize, sqSize);
     
     strokeWeight(2);

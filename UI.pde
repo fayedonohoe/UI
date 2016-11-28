@@ -39,6 +39,7 @@ void mouseClicked()
 
 void draw()
 {
+  
   radar.drawRadar();
   line.drawLine();
   enemy.enemyApproaching();
