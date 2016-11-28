@@ -10,8 +10,10 @@ void setup()
   size( 1000, 600);
   //fullScreen();  // 768 x 1366
   
-  radar = new Radar(); //initilias radar
-  line = new Line(); //initilias line
+  radar = new Radar(); //initialises radar
+  line = new Line(); //initialises line
+  enemy = new Enemy();//initialises enemy
+  
 }
 
 Radar radar; //declares radar
