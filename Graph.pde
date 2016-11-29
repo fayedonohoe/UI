@@ -1,5 +1,3 @@
-
-
 class Graph
 {  
   float[] point = {45, 27, 55, 81, 38, 66, 11};
@@ -16,8 +14,7 @@ class Graph
    float startX = 30; //starting x positon of the graph
    float startY = height-startX; //starting y position of the graph
    float Endx = width/5; //end x position of the graph ~~startX+(startY-startX);
-   float Endy = startY-(startY-startX); //end y position of the graph
-   
+   float Endy = 100; //end y position of the graph ~~startY-(startY-startX);
    stroke(255);
    line (startX, startY, startX, Endy); //draw Y axis
    line (startX, startY, Endx, startY); //draw X axis
@@ -27,8 +24,8 @@ class Graph
    float gLength = Endx-startX; //length of the graph
    float gHeight = startY-startX; //height of the graph
      
-   float spaceX = gLength / (labels.length-1); //space factor between x axis
-   float spaceY = gHeight / (border/distance); //space factir between y axis
+   float spaceX = 25; //space factor between x axis
+   float spaceY = gHeight / (border/distance); //space factor between y axis
      
      //x and y will start at the 0,0 of the graph and will increase by distance every iteration
    float x = startX; 
@@ -44,11 +41,10 @@ class Graph
       text(j, x-10, y);
         
       y -= spaceY; //move to the next space
-      
       j+=distance;
    }
    
-   //reset x and y at 0,0 of the graph
+   //reset x and y 
    x = startX;
    y = startY;
      
@@ -65,7 +61,7 @@ class Graph
      
    //change will be the x position of the graph and will move to each element in the horizLabels array  
    float change = startX;
-   float nextY; //will store the next y position of the point to be plotted so the previous point can connect to it creating the line 
+   float nextY; 
      
    stroke(0,255,255);
 
@@ -79,10 +75,11 @@ class Graph
      ellipse(change, y, 5, 5);
      line(change, y, change+spaceX, nextY); 
      change += spaceX;
- }
+  }
      //draw last dot
      nextY = map (-point[i], -border, 0, startX, gHeight+startX);
      ellipse(change, nextY, 5, 5);
+     
 }//end drawGraph
   
 }//end class

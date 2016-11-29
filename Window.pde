@@ -6,7 +6,6 @@ class Window
   
   Window()
   {
-    
     pos      =  new PVector(500,300); 
     velocity =  new PVector(random(-10,10),random(-10,10)); //randomises speed and direction of stars
   }

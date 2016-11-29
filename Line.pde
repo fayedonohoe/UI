@@ -1,7 +1,7 @@
 class Line extends Radar
 {
-  float lineX1 = 0;
-  float lineY1 = height-(width/5);
+  float lineX1 = width-sqSize/2;
+  float lineY1 = height-r;
 
   Line()
   {
@@ -10,7 +10,7 @@ class Line extends Radar
   void drawLine()
   {
     strokeWeight(6);
-    line( sqSize/2, height-r, lineX2, lineY2 );
+    line( lineX1, lineY1, lineX2, lineY2 );
     strokeWeight(1);
   }
 

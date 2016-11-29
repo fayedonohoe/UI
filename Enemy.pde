@@ -1,6 +1,6 @@
 class Enemy extends Radar
 {
-  int enemyX = sqSize/2;  //startX
+  int enemyX = width-(sqSize/2);  //startX
   int enemyY = height;  //startY
   int enemySize = 10;
 
