@@ -32,6 +32,12 @@ void alienZap()
   
   bugposY += 10;
 }  
+
+if (bugposY > height-10)
+{
+  textSize(30);
+  text("Alien has Escaped",460,300);
+}
   
   if (keyPressed)
 {
@@ -50,6 +56,11 @@ void alienZap()
     {
       stroke(0, 255, 255);
       line ( (playerX+25), height-40, (playerX+25), 0 );
+      
+      fill(255);
+      textSize(50);
+      text("Alien has force field, lazers usless",500,300);
+      text("You are Dooooomed",500,350);
       
       //distance = dist(
     

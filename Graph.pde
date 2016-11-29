@@ -38,6 +38,7 @@ class Graph
    {
       line(x, y, x-5, y);
       textAlign(RIGHT);
+      textSize(10);
       text(j, x-10, y);
         
       y -= spaceY; //move to the next space
