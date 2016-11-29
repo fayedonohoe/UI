@@ -1,5 +1,4 @@
 float randomX = random(498);
-//float randomMove = random(-30);
 float bugposX = randomX ;
 float bugposY = 0;
 float bugsize = 35;
@@ -7,7 +6,6 @@ float bugsize = 35;
 float playerX = width/2;
 float playerW = 50;
 float playerH = 20;
-//float cannon = (playerX + (playerW/2) );
 
 float distance;
 
@@ -61,8 +59,6 @@ if (bugposY > height-10)
       textSize(50);
       text("Alien has force field, lazers usless",500,300);
       text("You are Dooooomed",500,350);
-      
-      //distance = dist(
     
     }
   }

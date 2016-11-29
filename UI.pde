@@ -1,3 +1,9 @@
+/*
+OOP Assignment 1 - Create a sci-fi inspired User Interface
+Compete with loops, controls, array lists, inheritence
+
+*/
+
 int currentScreen = 1;
 
 Window stars;
@@ -13,19 +19,16 @@ void setup()
   radar = new Radar(); //initialises radar
   line = new Line(); //initialises line
   enemy = new Enemy();//initialises enemy
-  graph = new Graph();
+  graph = new Graph();// initialising
 
-  stars = new Window();
-  button = new Button();
+  stars = new Window();// initialising
+  button = new Button();// initialising
 }
   
   Radar radar; //declares radar
   Line line; //declares line
   Enemy enemy; //declares enemy
-  Graph graph; 
-  
-  
-   
+  Graph graph; //declaring
   
   /*check X and Y position
   void mouseClicked(){println(mouseX, mouseY);}
@@ -73,14 +76,7 @@ void setup()
   void mousePressed() {
     if (currentScreen == 2)
     {
-      //call bugzap
+      //call alienzap
       currentScreen = 3;
     }
   }
-
-
-/*
-to make orbity bits use  kinda but have the 7s dif nums
-float lineX2 = (sqSize/2 + (r-7)*cos(time));
-float lineY2 = (height-r + (r-7)*sin(time));
-*/

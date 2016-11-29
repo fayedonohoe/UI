@@ -27,7 +27,7 @@ class Enemy extends Radar
         currentScreen = 2;
       }
     }
-    else if (frameCount % 60 == 0)
+    else if (frameCount % 60 == 0) 
     { 
         enemyY = enemyY - 30;
     }

@@ -6,7 +6,7 @@ void callStars()
   { //stops arrayList from getting too big
     allStars.remove(0);
   }
-  stars = new Window(); //get a new star
+  stars = new Window(); //create a new star
   allStars.add(stars); //add stars to arrayList
   
   for(int i =0 ; i < allStars.size() ; i++)
