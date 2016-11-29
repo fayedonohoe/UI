@@ -22,9 +22,12 @@ class Enemy extends Radar
       enemyX = width-sqSize/2;
       enemyY = height-r;
       
-      currentScreen = 2;
+      if (enemyX == width - sqSize/2)
+      {
+        currentScreen = 2;
+      }
     }
-    else if (frameCount % 310 == 0)
+    else if (frameCount % 60 == 0)
     { 
         enemyY = enemyY - 50;
     }

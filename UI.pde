@@ -1,6 +1,7 @@
 int currentScreen = 1;
 
 Window stars;
+Button button;
  
 ArrayList<Window> allStars = new ArrayList<Window>(); //array list to store star objects
 
@@ -15,6 +16,7 @@ void setup()
   graph = new Graph();
 
   stars = new Window();
+  button = new Button();
 }
   
   Radar radar; //declares radar
@@ -57,11 +59,24 @@ void setup()
       //rect((width/5)+10, 10, 775,325); //outer frame
       callStars();
       
-      rect( 250, 700, 150, 150);
+      button.render();
+      
+      
     }
+    else if (currentScreen == 3)
+    {
+      alienZap();
+    }  
     
   }
-
+  
+  void mousePressed() {
+    if (currentScreen == 2)
+    {
+      //call bugzap
+      currentScreen = 3;
+    }
+  }
 
 
 /*
