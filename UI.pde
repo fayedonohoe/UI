@@ -1,4 +1,4 @@
-int currentScreen;
+int currentScreen = 1;
 
 Window stars;
  
@@ -32,14 +32,34 @@ void setup()
   void draw()
   {
     background(0);
-    radar.drawRadar();
-    line.drawLine();
-    enemy.enemyApproaching();
-    graph.drawGraph();
     
-    fill(0);
-    //rect((width/5)+10, 10, 775,325); //outer frame
-    callStars();
+    if (currentScreen == 1) 
+    {
+      radar.drawRadar();
+      line.drawLine();
+      enemy.enemyApproaching();
+      graph.drawGraph();
+      
+      fill(0);
+      //rect((width/5)+10, 10, 775,325); //outer frame
+      callStars();
+    }
+    
+    else if (currentScreen == 2)
+    {
+      
+      radar.drawRadar();
+      line.drawLine();
+      enemy.enemyApproaching();
+      graph.drawGraph();
+      
+      fill(0);
+      //rect((width/5)+10, 10, 775,325); //outer frame
+      callStars();
+      
+      rect( 250, 700, 150, 150);
+    }
+    
   }
 
 

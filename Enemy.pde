@@ -18,12 +18,15 @@ class Enemy extends Radar
 
     if (enemyY < height-r)
     {
+      
+      enemyX = width-sqSize/2;
       enemyY = height-r;
-      enemyX = sqSize/2;
+      
+      currentScreen = 2;
     }
     else if (frameCount % 310 == 0)
     { 
-        enemyY = enemyY - 10;
+        enemyY = enemyY - 50;
     }
 
  } 
