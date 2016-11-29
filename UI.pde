@@ -1,5 +1,9 @@
 int currentScreen;
-  
+
+Window stars;
+ 
+ArrayList<Window> allStars = new ArrayList<Window>(); //array list to store star objects
+
 void setup()
 {
   size( 1000, 600);
@@ -8,14 +12,18 @@ void setup()
   radar = new Radar(); //initialises radar
   line = new Line(); //initialises line
   enemy = new Enemy();//initialises enemy
-  window = new Window();
-  
+  graph = new Graph();
+
+  stars = new Window();
 }
   
   Radar radar; //declares radar
   Line line; //declares line
   Enemy enemy; //declares enemy
-  Window window;
+  Graph graph; 
+  
+  
+   
   
   /*check X and Y position
   void mouseClicked(){println(mouseX, mouseY);}
@@ -23,10 +31,15 @@ void setup()
   
   void draw()
   {
+    background(0);
     radar.drawRadar();
     line.drawLine();
     enemy.enemyApproaching();
-    window.drawWindow();
+    graph.drawGraph();
+    
+    fill(0);
+    //rect((width/5)+10, 10, 775,325); //outer frame
+    callStars();
   }
 
 

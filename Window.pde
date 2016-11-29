@@ -7,15 +7,15 @@ class Window
   Window()
   {
     
-    pos      =  new PVector(0,0); //(0, 0) is at the centre of the screen due to translate()
+    pos      =  new PVector(500,300); 
     velocity =  new PVector(random(-10,10),random(-10,10)); //randomises speed and direction of stars
   }
   
-  void drawWindow()
+  void render()
   {
-    fill(0);
-    rect(width/5, 10, 775,325); //outer frame
-    ellipse(pos.x, pos.y, random(1,2), random(1,2)); //creating a star
+    fill(255);
+    noStroke();
+    ellipse(pos.x, pos.y, 2, 2); //creating a star
   }
   
   void update()
