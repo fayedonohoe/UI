@@ -29,7 +29,7 @@ class Enemy extends Radar
     }
     else if (frameCount % 60 == 0)
     { 
-        enemyY = enemyY - 50;
+        enemyY = enemyY - 30;
     }
 
  } 

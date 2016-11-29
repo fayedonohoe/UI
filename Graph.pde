@@ -59,8 +59,7 @@ class Graph
       x += spaceX; //move to the next space
        
    }
-     
-   //change will be the x position of the graph and will move to each element in the horizLabels array  
+        //change will be the x position of the graph and will move to each element in the array  
    float change = startX;
    float nextY; 
      
